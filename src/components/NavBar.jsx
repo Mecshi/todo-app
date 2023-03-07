@@ -41,7 +41,7 @@ export const NavBar = () => {
 
       </ul>
 
-      {/* Created responsive design */ }
+      {/* Created responsive design smartphone */ }
 
       <div
         onClick={() => setNavBar(!navBar)}
