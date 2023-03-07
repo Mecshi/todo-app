@@ -50,13 +50,13 @@ export const NavBar = () => {
         {
           navBar
             ? <FaTimes
-              className='text-tahiti-200 hover:scale-110 hover:duration-200 hover:text-tahiti-100 hover:animate-bounce'
-              size={30}
-            />
+                className='text-tahiti-200 hover:scale-110 hover:duration-200 hover:text-tahiti-100 hover:animate-bounce'
+                size={30}
+              />
             : < RiMenu4Line
-              className='hover:scale-110 hover:duration-200 hover:text-tahiti-200 hover:animate-bounce'
-              size={30}
-            />
+                className='hover:scale-110 hover:duration-200 hover:text-tahiti-200 hover:animate-bounce'
+                size={30}
+              />
         }
       </div>
 
@@ -69,7 +69,7 @@ export const NavBar = () => {
             menuNav.map(({ link, id }) => {
               return (
                 <li
-                  className='px-4 cursor-ponter py-6 text-2xl font-medium hover:text-tahiti-200 hover:scale-110 hover: duration-200 hover:line-through'
+                  className='px-4 cursor-pointer py-6 text-2xl font-medium hover:text-tahiti-200 hover:scale-110 hover: duration-200 hover:line-through'
                   key={id}
                 >
                   {link}
