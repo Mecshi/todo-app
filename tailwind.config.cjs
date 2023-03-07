@@ -5,6 +5,10 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
+    fontFamily: {
+      pop: ['Poppins', 'system-ui']
+
+    },
     extend: {
       colors: {
         tahiti: {
