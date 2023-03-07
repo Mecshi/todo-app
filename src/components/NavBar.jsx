@@ -17,7 +17,7 @@ export const NavBar = () => {
 
       <div>
 
-        <h1 className='text-4xl font-semibold ml-2'>To
+        <h1 className='text-4xl font-semibold ml-2 text-tahiti-100'>To
           <span className='text-tahiti-200'>Do!</span>
 
         </h1>
@@ -30,7 +30,7 @@ export const NavBar = () => {
           menuNav.map(({ link, id }) => {
             return (
               <li
-                className='cursor-pointer text-xl font-medium hover:text-tahiti-200 hover:scale-110 hover: duration-200 hover:line-through'
+                className='cursor-pointer text-tahiti-100 text-xl font-medium hover:text-tahiti-200 hover:scale-110 hover: duration-200 hover:line-through'
                 key={id}
               >
                 {link}
@@ -69,7 +69,7 @@ export const NavBar = () => {
             menuNav.map(({ link, id }) => {
               return (
                 <li
-                  className='px-4 cursor-pointer py-6 text-2xl font-medium hover:text-tahiti-200 hover:scale-110 hover: duration-200 hover:line-through'
+                  className='px-4 cursor-pointer py-6 text-2xl font-medium hover:text-tahiti-200 text-tahiti-100 hover:scale-110 hover: duration-200 hover:line-through'
                   key={id}
                 >
                   {link}
