@@ -14,12 +14,18 @@ export const NavBar = () => {
 
   return (
     <nav className='flex justify-between items-center h-20 px-4 fixed w-full'>
+
       <div>
+
         <h1 className='text-4xl font-semibold ml-2'>To
           <span className='text-tahiti-200'>Do!</span>
+
         </h1>
+
       </div>
+
       <ul className='hidden md:flex gap-3'>
+
         {
           menuNav.map(({ link, id }) => {
             return (
@@ -32,7 +38,10 @@ export const NavBar = () => {
             )
           })
         }
+
       </ul>
+
+      {/* Created responsive design */ }
 
       <div
         onClick={() => setNavBar(!navBar)}
@@ -50,6 +59,9 @@ export const NavBar = () => {
             />
         }
       </div>
+
+      {/* Conditional rendering for pages */}
+
       {
         navBar &&
         <ul className='flex flex-col justify-center items-center absolute top-0 left-0 h-screen w-full bg-gradient-to-b from-tahiti-500 to-tahiti-400'>
