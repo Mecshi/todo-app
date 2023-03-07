@@ -13,7 +13,7 @@ export const NavBar = () => {
   const [navBar, setNavBar] = useState(false)
 
   return (
-    <nav className='flex justify-between items-center h-20 px-4 fixed w-full'>
+    <nav className='flex justify-between items-center h-20 px-8 fixed w-full'>
 
       <div>
 
@@ -24,7 +24,7 @@ export const NavBar = () => {
 
       </div>
 
-      <ul className='hidden md:flex gap-3'>
+      <ul className='hidden md:flex gap-4'>
 
         {
           menuNav.map(({ link, id }) => {
