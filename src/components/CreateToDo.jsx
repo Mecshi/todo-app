@@ -5,7 +5,6 @@ export const CreateToDo = () => {
   // create state for open modal
   const [isOpen, setIsOpen] = useState(false)
   // add function for close modal
-
   return (
     <>
       <button
@@ -16,7 +15,7 @@ export const CreateToDo = () => {
       </button>
 
       {
-        isOpen && <Modal />
+        isOpen && <Modal setIsOpen= {setIsOpen} />
       }
     </>
 
