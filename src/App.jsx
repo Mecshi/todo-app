@@ -1,11 +1,12 @@
-import { Form } from './components/Form'
+import { CreateToDo } from './components/CreateToDo'
+// import { Modal } from './components/Modal'
 import { NavBar } from './components/NavBar'
 
 const App = () => {
   return (
     <div>
       <NavBar />
-      <Form />
+      <CreateToDo />
     </div>
   )
 }
