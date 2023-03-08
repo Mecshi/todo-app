@@ -13,7 +13,7 @@ export const NavBar = () => {
   const [navBar, setNavBar] = useState(false)
 
   return (
-    <nav className='flex justify-between items-center h-20 px-8 fixed w-full'>
+    <nav className='flex justify-between items-center h-20 px-8 w-full'>
 
       <div>
 
