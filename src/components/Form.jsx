@@ -40,7 +40,7 @@ export const Form = () => {
         </section>
         <section className="flex flex-col gap-2 p-4">
           <label className="text-tahiti-100">Description</label>
-          <textarea className='rounded-2xl py-1 px-3 font-ligth' cols="30" rows="10"></textarea>
+          <textarea className=' overflow-hidden rounded-2xl py-1 px-3 font-ligth' cols="30" rows="10"></textarea>
         </section>
       </div>
     </form>
