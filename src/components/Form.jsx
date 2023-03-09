@@ -35,7 +35,7 @@ export const Form = (
 
           <label
             className='text-tahiti-100'
-            htmlFor="titleToDo"
+            htmlFor='titleToDo'
           >
             Title
           </label>
@@ -53,7 +53,7 @@ export const Form = (
 
           <label
             className='text-tahiti-100'
-            htmlFor="descToDo"
+            htmlFor='descToDo'
           >
             Description
           </label>
