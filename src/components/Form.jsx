@@ -10,8 +10,8 @@ export const Form = (
   return (
 
     <form
-      onSubmit={handleSubmit}
       className='bg-tahiti-400 mx-7 mt-5 my border rounded-2xl p-5 items-center justify-center shadow-md md:h-auto md:w-1/2'
+      onSubmit={handleSubmit}
     >
       <div>
 
@@ -33,7 +33,12 @@ export const Form = (
 
         <section className='flex flex-col gap-2 p-4'>
 
-          <label className='text-tahiti-100'>Title</label>
+          <label
+            className='text-tahiti-100'
+            htmlFor="titleToDo"
+          >
+            Title
+          </label>
 
           <input
             autoComplete='off'
@@ -46,7 +51,12 @@ export const Form = (
 
         <section className='flex flex-col gap-2 p-4'>
 
-          <label className='text-tahiti-100'>Description</label>
+          <label
+            className='text-tahiti-100'
+            htmlFor="descToDo"
+          >
+            Description
+          </label>
 
           <textarea
             autoComplete='off'

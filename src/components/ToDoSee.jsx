@@ -8,14 +8,14 @@ export const ToDoSee = ({ toDos }) => {
       className='grid grid-cols-1 gap-5 mx-8 md:grid-cols-3'
     >
       {
-        examplesCard.map(({ id, title, desc }) => {
+        examplesCard.map(({ title, desc }) => {
           // create const for description rendering card
           const cutDesc = desc.split(' ').slice(0, 24).join(' ')
           return (
             <ToDoCard
               cutDesc = {cutDesc}
               desc = {desc}
-              key = {id}
+              key = {title}
               title = {title}
             />
           )

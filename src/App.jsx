@@ -25,7 +25,7 @@ const App = () => {
 
     // insert toDo in state
     // add id count
-    let id = 3
+    let id = 0
     setToDos([
       ...toDos,
       {
@@ -34,7 +34,6 @@ const App = () => {
         desc: toDo.descToDo.value
       }
     ])
-
     // clean form
 
     toDo.descToDo.value = ''
@@ -44,6 +43,8 @@ const App = () => {
 
     setIsOpen(!isOpen)
   }
+
+  // TODO function press esc close modal
 
   // TODO create state for important toDo
 

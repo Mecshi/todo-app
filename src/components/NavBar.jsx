@@ -27,11 +27,11 @@ export const NavBar = () => {
       <ul className='hidden md:flex gap-4'>
 
         {
-          menuNav.map(({ link, id }) => {
+          menuNav.map(({ link }) => {
             return (
               <li
                 className='cursor-pointer text-tahiti-100 text-xl font-medium hover:text-tahiti-200 hover:scale-105 hover:duration-200 hover:line-through'
-                key={id}
+                key={link}
               >
                 {link}
               </li>
