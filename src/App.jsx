@@ -33,11 +33,10 @@ const App = () => {
 
     // insert toDo in state
     // add id count
-    let id = 0
     setToDos([
       ...toDos,
       {
-        id: id++,
+        id: toDo.titleToDo.value,
         title: toDo.titleToDo.value,
         desc: toDo.descToDo.value
       }

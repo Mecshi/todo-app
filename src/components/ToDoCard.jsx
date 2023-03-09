@@ -3,7 +3,6 @@ export const ToDoCard = (
   {
     cutDesc,
     desc,
-    id,
     title
   }
 
@@ -12,7 +11,7 @@ export const ToDoCard = (
 
     <div
       className='gap-5 bg-tahiti-400 rounded-lg p-4'
-      key={id}
+      key={title}
     >
       <h2 className='text-tahiti-100 text-2xl font-normal'>{title}</h2>
 
