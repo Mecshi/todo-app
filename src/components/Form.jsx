@@ -3,7 +3,7 @@ export const Form = ({ setIsOpen, handleSubmit }) => {
 
     <form
       onSubmit={handleSubmit}
-      className=' mx-7 mt-5 my border rounded-2xl p-5 items-center justify-center shadow-md md:h-auto md:w-1/2'
+      className='bg-tahiti-400 mx-7 mt-5 my border rounded-2xl p-5 items-center justify-center shadow-md md:h-auto md:w-1/2'
     >
       <div>
 
@@ -16,7 +16,7 @@ export const Form = ({ setIsOpen, handleSubmit }) => {
           </button>
 
           <button
-            className='bg-tahiti-200 px-7 py-1 rounded-2xl'
+            className='bg-tahiti-200 px-7 py-1 rounded-2xl hover:bg-opacity-70 hover:duration-150'
             type='submit'
           >Save
           </button>
