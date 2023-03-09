@@ -1,8 +1,12 @@
+import { useState } from 'react'
+
+// ...
+
 import { CreateToDo } from './components/CreateToDo'
 import { NavBar } from './components/NavBar'
 import { ToDoSee } from './components/ToDoSee'
-import { useState } from 'react'
 
+// ...
 const App = () => {
   // create state for close and open modal when send form
 
