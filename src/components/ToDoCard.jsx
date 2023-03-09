@@ -1,4 +1,13 @@
-export const ToDoCard = ({ title, desc, cutDesc, id }) => {
+export const ToDoCard = (
+
+  {
+    cutDesc,
+    desc,
+    id,
+    title
+  }
+
+) => {
   return (
 
     <div
@@ -7,9 +16,9 @@ export const ToDoCard = ({ title, desc, cutDesc, id }) => {
     >
       <h2 className='text-tahiti-100 text-2xl font-normal'>{title}</h2>
 
-      <p className='text-tahiti-100 '>
+      <p className='text-tahiti-100 mr-2'>
         {
-          desc.length <= cutDesc.length
+          desc.split(' ').length <= cutDesc.split(' ').length
             ? desc
             : (
                 cutDesc.at(-1) === ','

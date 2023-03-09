@@ -4,6 +4,10 @@ import { ToDoSee } from './components/ToDoSee'
 import { useState } from 'react'
 
 const App = () => {
+  // create state for close and open modal when send form
+
+  const [isOpen, setIsOpen] = useState(false)
+
   // state for form and save toDo
 
   const [toDos, setToDos] = useState([])
@@ -35,10 +39,14 @@ const App = () => {
 
     toDo.descToDo.value = ''
     toDo.titleToDo.value = ''
-    // TODO ver cierre modal despues de enviar form
+
+    // set state false for close form
+
+    setIsOpen(!isOpen)
   }
 
   // TODO create state for important toDo
+
   return (
     <div>
 
@@ -46,7 +54,11 @@ const App = () => {
 
       <ToDoSee toDos={toDos}/>
 
-      <CreateToDo handleSubmit={handleSubmit}/>
+      <CreateToDo
+        handleSubmit={handleSubmit}
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+      />
 
     </div>
   )

@@ -1,4 +1,12 @@
-export const Form = ({ setIsOpen, handleSubmit }) => {
+export const Form = (
+
+  {
+    handleSubmit,
+    isOpen,
+    setIsOpen
+  }
+
+) => {
   return (
 
     <form
@@ -11,7 +19,8 @@ export const Form = ({ setIsOpen, handleSubmit }) => {
 
           <button
             className='text-tahiti-100 bg-transparent px-2 py-1 hover:bg-gray-500 hover:rounded-lg'
-            onClick={() => setIsOpen(false)}
+            onClick={() => setIsOpen(!isOpen)}
+            type='button'
           >Cancel
           </button>
 
