@@ -21,7 +21,7 @@ const App = () => {
 
     // insert toDo in state
     // add id count
-    let id = 0
+    let id = 3
     setToDos([
       ...toDos,
       {

@@ -69,7 +69,7 @@ export const NavBar = () => {
             menuNav.map(({ link, id }) => {
               return (
                 <li
-                  className='px-4 cursor-pointer py-6 text-2xl font-medium hover:text-tahiti-200 text-tahiti-100 hover:scale-110 hover: duration-200 hover:line-through'
+                  className='px-4 cursor-pointer py-6 text-2xl font-medium hover:text-tahiti-200 text-tahiti-100 hover:scale-110 hover:duration-200 hover:line-through'
                   key={id}
                 >
                   {link}
