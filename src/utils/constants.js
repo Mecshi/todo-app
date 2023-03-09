@@ -17,7 +17,7 @@ export const menuNav = [
   }
 ]
 
-export const ejemplosCard = [
+export const examplesCard = [
   {
     id: 0,
     title: 'What is Lorem Ipsum?',
