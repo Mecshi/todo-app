@@ -3,8 +3,7 @@ import { useState } from 'react'
 // ...
 
 import { menuNav } from '../utils/constants'
-import { RiMenu4Line } from 'react-icons/ri'
-import { FaTimes } from 'react-icons/fa'
+import { MenuIcon, ExitIcon } from '../assets/Icons'
 
 // ...
 
@@ -49,14 +48,8 @@ export const NavBar = () => {
       >
         {
           navBar
-            ? <FaTimes
-                className='text-tahiti-200 hover:scale-110 hover:duration-200 hover:text-tahiti-100 hover:animate-bounce'
-                size={30}
-              />
-            : < RiMenu4Line
-                className='hover:scale-110 hover:duration-200 hover:text-tahiti-200 hover:animate-bounce'
-                size={30}
-              />
+            ? <ExitIcon />
+            : < MenuIcon />
         }
       </div>
 

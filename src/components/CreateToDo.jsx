@@ -1,7 +1,7 @@
 // ...
 
+import { AddIcon } from '../assets/Icons'
 import { Modal } from './Modal'
-import { RiAddLine } from 'react-icons/ri'
 
 // ...
 
@@ -22,7 +22,7 @@ export const CreateToDo = (
         className={`text-tahiti-100 rounded-full bg-tahiti-200 cursor-pointer bottom-0 fixed p-2 m-4 opacity-20 right-0 hover:animate-spin hover:opacity-100 hover:duration-200 ${isOpen ? 'hidden' : ''}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <RiAddLine size={50} />
+        <AddIcon />
       </button>
 
       {
