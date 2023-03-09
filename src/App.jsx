@@ -27,8 +27,7 @@ const App = () => {
       {
         id: id++,
         title: toDo.titleToDo.value,
-        desc: toDo.descToDo.value,
-        cutDesc: (toDo.descToDo.value).split(' ').slice(0, 24).join(' ')
+        desc: toDo.descToDo.value
       }
     ])
 
