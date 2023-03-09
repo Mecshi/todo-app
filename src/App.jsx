@@ -33,8 +33,8 @@ const App = () => {
 
     // clean form
 
-    toDo.titleToDo.value = ''
     toDo.descToDo.value = ''
+    toDo.titleToDo.value = ''
     // TODO ver cierre modal despues de enviar form
   }
 
