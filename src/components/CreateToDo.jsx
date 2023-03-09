@@ -1,7 +1,7 @@
 import { RiAddLine } from 'react-icons/ri'
 import { useState } from 'react'
 import { Modal } from './Modal'
-export const CreateToDo = () => {
+export const CreateToDo = ({ handleSubmit }) => {
   // create state for open modal
   const [isOpen, setIsOpen] = useState(false)
   // add function for close modal
@@ -15,7 +15,7 @@ export const CreateToDo = () => {
       </button>
 
       {
-        isOpen && <Modal setIsOpen= {setIsOpen} />
+        isOpen && <Modal handleSubmit={handleSubmit} setIsOpen= {setIsOpen} />
       }
     </>
 
