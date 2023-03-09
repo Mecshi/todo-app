@@ -10,8 +10,8 @@ export const Form = ({ setIsOpen, handleSubmit }) => {
         <div className='flex justify-between items-align px-4'>
 
           <button
-            onClick={() => setIsOpen(false)}
             className='text-tahiti-100 bg-transparent px-2 py-1 hover:bg-gray-500 hover:rounded-lg'
+            onClick={() => setIsOpen(false)}
           >Cancel
           </button>
 
@@ -24,13 +24,13 @@ export const Form = ({ setIsOpen, handleSubmit }) => {
 
         <section className='flex flex-col gap-2 p-4'>
 
-          <label className='text-tahiti-100' >Title</label>
+          <label className='text-tahiti-100'>Title</label>
 
           <input
             autoComplete='off'
-            type='text'
             className='rounded-2xl py-1 px-3'
             name='titleToDo'
+            type='text'
           />
 
         </section>
@@ -39,10 +39,11 @@ export const Form = ({ setIsOpen, handleSubmit }) => {
 
           <label className='text-tahiti-100'>Description</label>
 
-          <textarea autoComplete='off'
-            name='descToDo'
+          <textarea
+            autoComplete='off'
             className='overflow-hidden rounded-2xl py-1 px-3 font-ligth'
             cols='30'
+            name='descToDo'
             rows='10'
           />
 

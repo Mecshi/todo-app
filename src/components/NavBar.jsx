@@ -44,8 +44,8 @@ export const NavBar = () => {
       {/* Created responsive design smartphone */ }
 
       <div
-        onClick={() => setNavBar(!navBar)}
         className='md:hidden cursor-pointer pr-4 z-10 text-tahiti-100'
+        onClick={() => setNavBar(!navBar)}
       >
         {
           navBar
