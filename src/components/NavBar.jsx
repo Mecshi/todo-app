@@ -15,10 +15,10 @@ export const NavBar = () => {
   return (
     <nav className='flex justify-between items-center h-20 px-8 w-full'>
 
-      <div>
+      <div className='cursor-pointer hover:scale-200 hover:line-through decoration-slate-500 hover:opacity-70'>
 
         <h1 className='text-4xl font-semibold ml-2 text-tahiti-100'>To
-          <span className='text-tahiti-200'>Do!</span>
+          <span className='text-tahiti-200 hover:scale-150'>Do!</span>
 
         </h1>
 
@@ -30,7 +30,7 @@ export const NavBar = () => {
           menuNav.map(({ link, id }) => {
             return (
               <li
-                className='cursor-pointer text-tahiti-100 text-xl font-medium hover:text-tahiti-200 hover:scale-110 hover: duration-200 hover:line-through'
+                className='cursor-pointer text-tahiti-100 text-xl font-medium hover:text-tahiti-200 hover:scale-105 hover:duration-200 hover:line-through'
                 key={id}
               >
                 {link}
