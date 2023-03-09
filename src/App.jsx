@@ -21,12 +21,15 @@ const App = () => {
     if (!toDo.titleToDo.value) return
 
     // insert toDo in state
-
+    // add id count
+    let id = 0
     setToDos([
       ...toDos,
       {
+        id: id++,
         title: toDo.titleToDo.value,
-        desc: toDo.descToDo.value
+        desc: toDo.descToDo.value,
+        cutDesc: (toDo.descToDo.value).split(' ').slice(0, 24).join(' ')
       }
     ])
 
