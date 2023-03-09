@@ -8,13 +8,13 @@ import { ToDoSee } from './components/ToDoSee'
 
 // ...
 const App = () => {
-  // created state for select icon
-
-  const [navBar, setNavBar] = useState(false)
-
   // create state for close and open modal when send form
 
   const [isOpen, setIsOpen] = useState(false)
+
+  // created state for select icon
+
+  const [navBar, setNavBar] = useState(false)
 
   // state for form and save toDo
 
