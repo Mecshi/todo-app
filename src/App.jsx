@@ -13,7 +13,7 @@ const App = () => {
 
   const handleSubmit = (event) => {
     // prevent refresh page
-
+    console.log(event)
     event.preventDefault()
 
     const toDo = event.target
@@ -36,12 +36,14 @@ const App = () => {
     toDo.descToDo.value = ''
     // TODO ver cierre modal despues de enviar form
   }
+
+  // TODO create state for important toDo
   return (
     <div>
 
       <NavBar />
 
-      <ToDoSee />
+      <ToDoSee toDos={toDos}/>
 
       <CreateToDo handleSubmit={handleSubmit}/>
 
