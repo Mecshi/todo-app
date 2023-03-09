@@ -7,13 +7,12 @@ const App = () => {
   // state for form and save toDo
 
   const [toDos, setToDos] = useState([])
-  console.log(toDos)
 
   // function send data
 
   const handleSubmit = (event) => {
     // prevent refresh page
-    console.log(event)
+
     event.preventDefault()
 
     const toDo = event.target
