@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 // ...
 
 import { menuNav } from '../utils/constants'
@@ -7,10 +5,7 @@ import { MenuIcon, ExitIcon } from '../assets/Icons'
 
 // ...
 
-export const NavBar = () => {
-  // created state for select icon
-  const [navBar, setNavBar] = useState(false)
-
+export const NavBar = ({ navBar, setNavBar }) => {
   return (
     <nav className='flex justify-between items-center h-20 px-8 w-full'>
 

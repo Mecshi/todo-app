@@ -8,6 +8,10 @@ import { ToDoSee } from './components/ToDoSee'
 
 // ...
 const App = () => {
+  // created state for select icon
+
+  const [navBar, setNavBar] = useState(false)
+
   // create state for close and open modal when send form
 
   const [isOpen, setIsOpen] = useState(false)
@@ -55,15 +59,18 @@ const App = () => {
   return (
     <div>
 
-      <NavBar />
+      <NavBar navBar={navBar} setNavBar={setNavBar} />
 
-      <ToDoSee toDos={toDos}/>
+      <ToDoSee toDos={toDos} />
+      {
+        !navBar &&
+        <CreateToDo
+          handleSubmit={handleSubmit}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
 
-      <CreateToDo
-        handleSubmit={handleSubmit}
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-      />
+        />
+      }
 
     </div>
   )
