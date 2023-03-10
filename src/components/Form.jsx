@@ -21,13 +21,15 @@ export const Form = (
             className='text-tahiti-100 bg-transparent px-2 py-1 hover:bg-gray-500 hover:rounded-lg'
             onClick={() => setIsOpen(!isOpen)}
             type='button'
-          >Cancel
+          >
+            Cancel
           </button>
 
           <button
             className='bg-tahiti-200 px-7 py-1 rounded-2xl hover:bg-opacity-70 hover:duration-150'
             type='submit'
-          >Save
+          >
+            Save
           </button>
         </div>
 
