@@ -19,10 +19,12 @@ export const CreateToDo = (
   return (
     <section>
       <button
-        className={`text-tahiti-100 rounded-full bg-tahiti-200 cursor-pointer bottom-0 fixed p-2 m-4 opacity-20 right-0 hover:animate-spin hover:opacity-100 hover:duration-200 ${isOpen ? 'hidden' : ''}`}
+        className={`text-tahiti-500 rounded-full bg-tahiti-200 bg-opacity-80 cursor-pointer bottom-5 fixed p-2 right-5 ${isOpen ? 'hidden' : ''} flex flex-row items-center`}
+        name='Add toDo'
         onClick={() => setIsOpen(!isOpen)}
       >
         <AddIcon />
+        <span className='px-4 text-2xl font-medium'>Add</span>
       </button>
 
       {
