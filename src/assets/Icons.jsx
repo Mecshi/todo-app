@@ -19,38 +19,42 @@ export const AddIcon = () => (
 
 export const MenuIcon = () => (
 
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    className='hover:scale-110 hover:duration-200 hover:animate-bounce'
-    width={32}
-    height={32}
-    viewBox='0 0 24 24'
-    strokeWidth={2}
-    stroke='#fff'
-    fill='none'
-    strokeLinecap='round'
-    strokeLinejoin='round'
+  <button className='rounded-lg hover:border hover:border-tahiti-200 hover:bg-tahiti-400'
   >
-    <path d='M0 0h24v24H0z' stroke='none' />
-    <path d='M4 6h16M8 12h8M6 18h12' />
-  </svg>
-)
-export const ExitIcon = () => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      className=' w-8 h-8'
+      viewBox='0 0 24 24'
+      strokeWidth={2}
+      stroke='#FCFCFC'
+      fill='none'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    >
+      <path d='M0 0h24v24H0z' stroke='none' />
+      <path d='M4 6h16M8 12h8M6 18h12' />
+    </svg>
+  </button>
 
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    className='text-tahiti-200 hover:scale-110 hover:duration-200 hover:text-tahiti-100 hover:animate-bounce'
-    width={32}
-    height={32}
-    viewBox='0 0 24 24'
-    strokeWidth={2}
-    stroke='#FFB43A'
-    fill='none'
-    strokeLinecap='round'
-    strokeLinejoin='round'
-  >
-    <path d='M0 0h24v24H0z' stroke='none' />
-    <path d='M18 6 6 18M6 6l12 12' />
-  </svg>
+)
+
+export const ExitIcon = () => (
+  <button className='rounded-lg hover:border hover:border-tahiti-200 hover:bg-tahiti-400'>
+
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      className='icon icon-tabler icon-tabler-plus h-8 w-8'
+      viewBox='0 0 24 24'
+      strokeWidth={2}
+      stroke='#FFB43A'
+      fill='none'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    >
+      <path d='M0 0h24v24H0z' stroke='none' />
+      <path d='M18 6 6 18M6 6l12 12' />
+    </svg>
+
+  </button>
 
 )
