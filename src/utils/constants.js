@@ -1,19 +1,23 @@
 export const menuNav = [
   {
     link: 'All',
-    id: 1
+    id: 1,
+    path: '/'
   },
   {
     link: 'Completed',
-    id: 2
+    id: 2,
+    path: '/completed'
   },
   {
     link: 'Incompleted',
-    id: 3
+    id: 3,
+    path: '/incompleted'
   },
   {
     link: 'Important',
-    id: 4
+    id: 4,
+    path: '/important'
   }
 ]
 
