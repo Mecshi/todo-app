@@ -9,10 +9,10 @@ export const NavBar = ({ navBar, setNavBar }) => {
   return (
     <nav className='flex justify-between fixed items-center h-20 px-8 w-full'>
 
-      <div className='cursor-pointer hover:scale-200 hover:line-through decoration-slate-500 hover:opacity-70'>
+      <div className='cursor-pointer hover:scale-200 hover:line-through decoration-gray-500 hover:opacity-70'>
 
         <h1 className='text-4xl font-semibold ml-2 text-tahiti-100'>To
-          <span className='text-tahiti-200 hover:scale-150'>Do!</span>
+          <span className='text-tahiti-200'>Do!</span>
 
         </h1>
 
@@ -24,7 +24,7 @@ export const NavBar = ({ navBar, setNavBar }) => {
           menuNav.map(({ link }) => {
             return (
               <li
-                className='cursor-pointer text-tahiti-100 text-xl font-medium hover:text-tahiti-200 hover:scale-105 hover:duration-200 hover:line-through'
+                className='cursor-pointer text-tahiti-100 text-xl font-medium hover:text-tahiti-200 hover:duration-200 hover:line-through'
                 key={link}
               >
                 {link}
@@ -38,7 +38,7 @@ export const NavBar = ({ navBar, setNavBar }) => {
       {/* Created responsive design smartphone */ }
 
       <div
-        className='md:hidden cursor-pointer z-10 text-tahiti-100'
+        className='md:hidden cursor-pointer z-10 h-8'
         onClick={() => setNavBar(!navBar)}
       >
         {
