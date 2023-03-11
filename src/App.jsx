@@ -3,14 +3,16 @@ import { Route, Routes } from 'react-router-dom'
 
 // ...
 
-import { CompleteToDo } from './components/CompleteToDo'
 import { CreateToDo } from './components/CreateToDo'
-import { ImportantToDo } from './components/ImportantToDo'
-import { IncompleteToDo } from './components/IncompleteToDo'
 import { NavBar } from './components/NavBar'
 import { ToDoSee } from './components/ToDoSee'
 
+// import { CompleteToDo } from './components/CompleteToDo'
+// import { ImportantToDo } from './components/ImportantToDo'
+// import { IncompleteToDo } from './components/IncompleteToDo'
+
 // ...
+
 const App = () => {
   // create state for close and open modal when send form
 
@@ -77,9 +79,13 @@ const App = () => {
 
       <Routes>
         <Route path='/' element={<ToDoSee toDos={toDos} />} />
-        <Route path='/completed' element={<CompleteToDo />} />
-        <Route path='/incompleted' element={<IncompleteToDo />} />
-        <Route path='/important' element={<ImportantToDo />} />
+        {
+          /*
+          <Route path='/completed' element={<CompleteToDo />} />
+          <Route path='/incompleted' element={<IncompleteToDo />} />
+          <Route path='/important' element={<ImportantToDo />} />
+          */
+        }
       </Routes>
 
     </div>
