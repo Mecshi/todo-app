@@ -24,7 +24,7 @@ export const menuNav = [
 export const examplesCard = [
   {
     id: 0,
-    title: 'Add a ToDo sss',
+    title: 'Add a ToDo',
     desc: 'Click the "Add" button, enter a title (it is exclusive) and add a description, then press the "Send" button. And done!.'
   },
   {
