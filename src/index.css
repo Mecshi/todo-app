@@ -4,9 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    background-color: #1C1C27;
-  };
-  
+body {
+  background-color: #1C1C27;
+}
+
+button:hover {
+  margin: -1px;
+  padding: -1px
 }
