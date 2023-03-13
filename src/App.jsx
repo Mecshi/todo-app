@@ -14,6 +14,8 @@ import { ToDoSee } from './components/ToDoSee'
 // ...
 
 const App = () => {
+  // TODO create state for important toDo
+
   // create state for close and open modal when send form
 
   const [isOpen, setIsOpen] = useState(false)
@@ -58,8 +60,6 @@ const App = () => {
   }
 
   // TODO function press esc close modal
-
-  // TODO create state for important toDo
 
   return (
     <div>
