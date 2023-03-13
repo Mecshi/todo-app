@@ -10,7 +10,7 @@ import { MenuIcon, ExitIcon } from '../assets/Icons'
 export const NavBar = ({ navBar, setNavBar }) => {
   return (
     <header className='flex justify-center'>
-      <nav className='flex justify-between items-center h-20 px-8 w-4/5'>
+      <nav className='flex justify-between items-center h-20 px-8 w-4/5 fixed'>
 
       <div className='cursor-pointer hover:scale-200 hover:line-through decoration-gray-500 hover:opacity-70'>
         <NavLink to='/' >
