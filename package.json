@@ -25,6 +25,9 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
     "postcss": "^8.4.21",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
     "tailwindcss": "^3.2.7",
     "vite": "^4.1.0"
   }
