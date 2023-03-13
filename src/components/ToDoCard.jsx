@@ -1,3 +1,4 @@
+import { IconCard } from '../assets/Icons'
 export const ToDoCard = (
 
   {
@@ -13,9 +14,14 @@ export const ToDoCard = (
       className='gap-5 bg-tahiti-400 rounded-lg p-4'
       key={title}
     >
-      <h2 className='text-tahiti-100 text-2xl font-normal'>{title}</h2>
+      <div className='flex flex-row justify-between items-center'>
+        <h2 className='text-tahiti-100 text-2xl font-normal'>{title}</h2>
+        <button className='rounded-lg hover:border hover:border-tahiti-200'>
+          <IconCard />
+        </button>
+      </div>
 
-      <p className='text-tahiti-100 mr-2'>
+      <p className='text-tahiti-100 mr-2 pt-4'>
         {
           desc.split(' ').length <= cutDesc.split(' ').length
             ? desc
