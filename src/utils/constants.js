@@ -24,22 +24,27 @@ export const menuNav = [
 export const examplesCard = [
   {
     id: 0,
-    title: 'What is Lorem Ipsum?',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+    title: 'Add a ToDo sss',
+    desc: 'Click the "Add" button, enter a title (it is exclusive) and add a description, then press the "Send" button. And done!.'
   },
   {
     id: 1,
-    title: 'Why do we use it?',
-    desc: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using "Content here, content here", making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for "lorem ipsum" will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).'
+    title: 'Edit a ToDo',
+    desc: 'Click the three dots on the toDo card, select "Edit" and then make any changes you need!'
   },
   {
     id: 2,
-    title: 'Where does it come from?',
-    desc: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
+    title: 'Delete a toDo',
+    desc: 'Click the three dots on the toDo card, select "Delete" and if you are sure, press Yes!'
   },
   {
     id: 3,
-    title: 'Where can I get some?',
-    desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.'
+    title: 'Mark a toDo as Important',
+    desc: 'Press the star under the description and go to the menu, enter the Important section and you will see your saved toDo!'
+  },
+  {
+    id: 4,
+    title: 'Do you see three dots at the end of a toDo?',
+    desc: 'If you see the three dots, it means that the toDo has more content, to see it click on it, there you can see everything you have written!'
   }
 ]
