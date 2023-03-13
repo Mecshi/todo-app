@@ -1,4 +1,7 @@
-import { IconCard } from '../assets/Icons'
+// import { IconCard } from '../assets/Icons'
+
+// ...
+
 export const ToDoCard = (
 
   {
@@ -16,9 +19,9 @@ export const ToDoCard = (
     >
       <div className='flex flex-row justify-between items-center'>
         <h2 className='text-tahiti-100 text-2xl font-normal'>{title}</h2>
-        <button className='rounded-lg hover:border hover:border-tahiti-200'>
+        {/* <button className='rounded-lg hover:border hover:border-tahiti-200'>
           <IconCard />
-        </button>
+        </button> */}
       </div>
 
       <p className='text-tahiti-100 mr-2 pt-4'>
