@@ -19,8 +19,8 @@ export const CreateToDo = (
   return (
     <section>
       <button
-        className={`text-tahiti-500 rounded-full bg-tahiti-200 bg-opacity-80 cursor-pointer bottom-5 fixed p-2 right-5 ${isOpen ? 'hidden' : ''} flex flex-row items-center`}
-        name='Add toDo'
+        className={`text-tahiti-500 rounded-full bg-tahiti-200 opacity-50 bottom-5 fixed p-2 right-5 ${isOpen ? 'hidden' : ''} flex flex-row items-center hover:border hover:border-tahiti-100 hover:opacity-100`}
+        name='AddtoDo'
         onClick={() => setIsOpen(!isOpen)}
       >
         <AddIcon />
