@@ -63,7 +63,7 @@ export const IconCard = () => (
 
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    className=''
+    className='h-7 w-7 text-tahiti-100'
     viewBox='0 0 24 24'
     strokeWidth='2'
     stroke='currentColor'
