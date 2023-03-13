@@ -24,17 +24,21 @@ export const ToDoCard = (
         </button> */}
       </div>
 
-      <p className='text-tahiti-100 mr-2 pt-4'>
-        {
-          desc.split(' ').length <= cutDesc.split(' ').length
-            ? desc
-            : (
-                cutDesc.at(-1) === ','
-                  ? cutDesc.slice(0, cutDesc.length - 1) + ' ...'
-                  : cutDesc + ' ...'
-              )
-        }
-      </p>
+      <section>
+        <p className='text-tahiti-100 mr-2 pt-4'>
+          {
+            desc.split(' ').length <= cutDesc.split(' ').length
+              ? desc
+              : (
+                  cutDesc.at(-1) === ','
+                    ? cutDesc.slice(0, cutDesc.length - 1) + ' ...'
+                    : cutDesc + ' ...'
+                )
+          }
+        </p>
+
+        { /* Add setImportant here */ }
+      </section>
     </div>
   )
 }
