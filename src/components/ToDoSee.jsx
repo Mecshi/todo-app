@@ -7,7 +7,7 @@ export const ToDoSee = ({ toDos }) => {
 
     <section className='flex justify-center '>
       <div
-        className='grid grid-cols-1 gap-5 md:grid-cols-3 py-24 w-[90%] md:w-[70%]'
+        className='grid grid-cols-1 gap-5 md:grid-cols-2 py-24 w-[90%] md:w-[70%]'
       >
         { /*
             {
@@ -28,14 +28,14 @@ export const ToDoSee = ({ toDos }) => {
         }
 
         {
-          toDos.map(({ title, desc }) => {
+          toDos.map(({ title, desc, id }) => {
             // create const for description rendering card
             const cutDesc = desc.split(' ').slice(0, 24).join(' ')
             return (
               <ToDoCard
                 cutDesc={cutDesc}
                 desc={desc}
-                key={title}
+                key={id}
                 title={title}
               />
             )
