@@ -7,7 +7,7 @@ export const ToDoSee = ({ toDos }) => {
 
     <section className='flex justify-center '>
       <div
-        className='grid grid-cols-1 gap-5 md:grid-cols-3 py-24 w-[70%]'
+        className='grid grid-cols-1 gap-5 md:grid-cols-3 py-24 w-[90%] md:w-[70%]'
       >
         { /*
             {
