@@ -3,11 +3,12 @@ import { useState } from 'react'
 
 // ...
 
-import { CompleteToDo } from './components/CompleteToDo'
+import { CompleteToDo } from './pages/CompleteToDo'
 import { CreateToDo } from './components/CreateToDo'
-import { ImportantToDo } from './components/ImportantToDo'
+import { ImportantToDo } from './pages/ImportantToDo'
 import { IncompleteToDo } from './components/IncompleteToDo'
 import { NavBar } from './components/NavBar'
+import { NotFoundPage } from './pages/NotFoundPage'
 import { ToDoSee } from './components/ToDoSee'
 
 // ...
@@ -79,6 +80,7 @@ const App = () => {
         <Route path='/completed' element={<CompleteToDo />} />
         <Route path='/incompleted' element={<IncompleteToDo />} />
         <Route path='/important' element={<ImportantToDo />} />
+        <Route path='*' element={<NotFoundPage />} />
 
       </Routes>
 
