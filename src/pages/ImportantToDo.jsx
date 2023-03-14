@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import { ToDoCard } from './ToDoCard'
+import { ToDoCard } from '../components/ToDoCard'
 export const ImportantToDo = () => {
   const { toDoImportant } = useSelector(state => state)
 
