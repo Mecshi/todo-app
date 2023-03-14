@@ -13,7 +13,8 @@ export const ToDoCard = (
   {
     cutDesc,
     desc,
-    title
+    title,
+    id
   }
 
 ) => {
@@ -31,13 +32,14 @@ export const ToDoCard = (
   const handleImportant = () => {
     if (isImportant) {
       setIsImportant(false)
-      dispatch(deleteImportant(title))
+      dispatch(deleteImportant(id))
     } else {
       setIsImportant(true)
       dispatch(addImportant({
         title,
         desc,
-        cutDesc
+        cutDesc,
+        id
       }))
     }
   }

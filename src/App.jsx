@@ -41,7 +41,7 @@ const App = () => {
     setToDos([
       ...toDos,
       {
-        id: toDo.titleToDo.value,
+        id: toDos.length,
         title: toDo.titleToDo.value,
         desc: toDo.descToDo.value
       }

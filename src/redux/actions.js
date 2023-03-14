@@ -7,9 +7,9 @@ export const addImportant = (toDo) => {
   })
 }
 
-export const deleteImportant = (title) => {
+export const deleteImportant = (id) => {
   return ({
     type: DELETE_IMPORTANT,
-    payload: title
+    payload: id
   })
 }

@@ -13,7 +13,7 @@ const rootReducer = (state = initialState, { type, payload }) => {
     case DELETE_IMPORTANT:
       return ({
         ...state,
-        toDoImportant: state.toDoImportant.filter((toDo) => toDo.title !== payload)
+        toDoImportant: state.toDoImportant.filter((toDo) => toDo.id !== payload)
       })
     default:
       return state
