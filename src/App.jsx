@@ -1,21 +1,19 @@
-import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
+import { useState } from 'react'
 
 // ...
 
 import { CreateToDo } from './components/CreateToDo'
+import { ImportantToDo } from './components/ImportantToDo'
 import { NavBar } from './components/NavBar'
 import { ToDoSee } from './components/ToDoSee'
 
 // import { CompleteToDo } from './components/CompleteToDo'
-// import { ImportantToDo } from './components/ImportantToDo'
 // import { IncompleteToDo } from './components/IncompleteToDo'
 
 // ...
 
 const App = () => {
-  // TODO create state for important toDo
-
   // create state for close and open modal when send form
 
   const [isOpen, setIsOpen] = useState(false)
@@ -79,13 +77,10 @@ const App = () => {
 
       <Routes>
         <Route path='/' element={<ToDoSee toDos={toDos} />} />
-        {
-          /*
-          <Route path='/completed' element={<CompleteToDo />} />
-          <Route path='/incompleted' element={<IncompleteToDo />} />
-          <Route path='/important' element={<ImportantToDo />} />
-          */
-        }
+        {/* <Route path='/completed' element={<CompleteToDo />} /> */}
+        {/* <Route path='/incompleted' element={<IncompleteToDo />} /> */}
+        <Route path='/important' element={<ImportantToDo />} />
+
       </Routes>
 
     </div>
