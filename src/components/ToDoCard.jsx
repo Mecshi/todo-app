@@ -1,7 +1,11 @@
-// import { IconCard } from '../assets/Icons'
-import { addImportant, deleteImportant } from '../redux/actions'
 import { useDispatch, useSelector } from 'react-redux'
 import { useState, useEffect } from 'react'
+
+// ...
+
+import { addImportant, deleteImportant } from '../redux/actions'
+import { IconStarFull, IconStarNull, IconCard } from '../assets/Icons'
+
 // ...
 
 export const ToDoCard = (
@@ -16,7 +20,11 @@ export const ToDoCard = (
   // config dispatch
   const dispatch = useDispatch()
 
+  // gets the global state property
+
   const { toDoImportant } = useSelector(state => state)
+
+  // create state for important toDo
 
   const [isImportant, setIsImportant] = useState(false)
 
@@ -33,6 +41,7 @@ export const ToDoCard = (
       }))
     }
   }
+
   useEffect(() => {
     toDoImportant.forEach((toDo) => {
       if (toDo.title === title) {
@@ -47,12 +56,34 @@ export const ToDoCard = (
       className='gap-5 bg-tahiti-400 rounded-lg p-4'
       key={title}
     >
-      <div className='flex flex-row justify-between items-center'>
-        <h2 className='text-tahiti-100 text-2xl font-normal'>{title}</h2>
-        {/* <button className='rounded-lg hover:border hover:border-tahiti-200'>
+      { /* Add setImportant here */}
+
+      <div className='flex flex-row-reverse justify-between pb-2'>
+        <button className='rounded-lg hover:border hover:border-tahiti-200'>
           <IconCard />
-        </button> */}
+        </button>
+        {
+          isImportant
+            ? (
+                <button
+                  className='p-1 rounded-sm hover:border hover:border-tahiti-200  text-tahiti-200'
+                  onClick={handleImportant}
+                >
+                  <IconStarFull />
+                </button>
+              )
+            : (
+                <button
+                  className='p-1 rounded-sm hover:border hover:border-tahiti-200'
+                  onClick={handleImportant}
+                >
+                  <IconStarNull />
+                </button>
+              )
+        }
       </div>
+
+      <h2 className='text-tahiti-100 text-2xl font-normal'>{title}</h2>
 
       <section>
         <p className='text-tahiti-100 mr-2 pt-4 pb-3'>
@@ -67,29 +98,6 @@ export const ToDoCard = (
           }
         </p>
 
-        { /* Add setImportant here */ }
-
-        <div className='flex justify-end'>
-            {
-              isImportant
-                ? (
-                    <button
-                      className='p-1 rounded-sm hover:border hover:border-tahiti-200'
-                      onClick={handleImportant}
-                    >
-                      ❤️
-                    </button>
-                  )
-                : (
-                    <button
-                      className='p-1 rounded-sm hover:border hover:border-tahiti-200'
-                      onClick={handleImportant}
-                    >
-                      🤍
-                    </button>
-                  )
-            }
-        </div>
       </section>
     </div>
   )
