@@ -35,6 +35,7 @@ export const NavBar = ({ navBar, setNavBar }) => {
                 <li
                   className='cursor-pointer text-tahiti-100 text-xl font-medium hover:text-tahiti-200 hover:duration-200 hover:line-through'
                   key={link}
+
                 >
                   {link}
                 </li>
@@ -73,6 +74,7 @@ export const NavBar = ({ navBar, setNavBar }) => {
                   <li
                     className='px-4 cursor-pointer py-6 text-2xl font-medium hover:text-tahiti-200 text-tahiti-100 hover:scale-110 hover:duration-200 hover:line-through'
                     key={id}
+                    onClick={() => setNavBar(!navBar)}
                   >
                     {link}
                   </li>
